@@ -1,9 +1,7 @@
 use async_trait::async_trait;
-use maelstrom::{Node, Runtime, Result, protocol::Message, done};
+use maelstrom::{done, protocol::Message, Node, Result, Runtime};
 
-
-pub(crate) struct Handler {
-}
+pub(crate) struct Handler {}
 
 #[async_trait]
 impl Node for Handler {
@@ -15,4 +13,3 @@ impl Node for Handler {
         done(runtime, req)
     }
 }
-    

@@ -1,9 +1,11 @@
 [workspace]
 
 members = [
-    "echo"
+    "echo",
+    "unique-id",
 ]
 
 [workspace.dependencies]
 maelstrom-node = "0.1.6"
 async-trait = "0.1.68"
+serde = { version = "1.0", features = ["derive"] }

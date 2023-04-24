@@ -1,6 +1,6 @@
 use std::sync::Arc;
 
-use maelstrom::{Runtime, Result};
+use maelstrom::{Result, Runtime};
 
 mod handler;
 
